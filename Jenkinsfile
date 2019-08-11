@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Stage2') {
       steps {
-        sh '''git checkout Dev1
+        sh '''git checkout feature1
 echo " listing Dev1 branch files"
 ls -al
 '''
