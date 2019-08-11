@@ -8,12 +8,9 @@ pipeline {
     }
     stage('Stage2') {
       steps {
-        sh '''git branch -a
-echo " Listing branches & files"
-ls -al
-'''
-      }
-    }
+        ls -al
+       }
+    }    
     stage('finalstage') {
       steps {
         echo 'End of Pipeline'
